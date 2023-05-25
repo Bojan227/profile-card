@@ -33,10 +33,10 @@ export default function ProfileCard() {
       gap="25px"
       align="center"
       width="40%"
-      border="1px solid black"
       borderRadius="8px"
       padding="18px"
       paddingBottom="45px"
+      border="2px solid skyblue"
     >
       <Flex alignSelf="flex-end">
         <Link to="/edit-my-profile">

@@ -38,11 +38,11 @@ export default function EditForm() {
       direction="column"
       gap="25px"
       align="center"
-      width="40%"
-      border="1px solid black"
+      width="45%"
       borderRadius="8px"
       padding="18px"
       paddingBottom="45px"
+      border="2px solid skyblue"
     >
       <Avatar size="xl" src="https://bit.ly/broken-link" />
       <Input
@@ -66,7 +66,14 @@ export default function EditForm() {
 
       <Flex width="100%" justify="space-between">
         <Button onClick={() => navigate("/")}>Cancel</Button>
-        <Button onClick={editUserInfo}>Save</Button>
+        <Button
+          variant="outline"
+          onClick={editUserInfo}
+          colorScheme="teal"
+          size="md"
+        >
+          Save
+        </Button>
       </Flex>
     </Flex>
   );
