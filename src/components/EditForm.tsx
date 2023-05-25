@@ -1,12 +1,24 @@
 import { Avatar, Button, Flex, Input } from '@chakra-ui/react'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import getFromLocalStorage from '../utils/getFromLocalStorage'
 
 export default function EditForm(){
         const [firstName, setFirstName] = useState("")
         const [lastName, setLastName] = useState("")
         const [office, setOffice] = useState("")
+
+        useEffect(()=>{
+            const user = getFromLocalStorage('user')
+            
+            if(user != null){
+                setFirstName(user.firstName)
+                setLastName(user.lastName)
+                setOffice(user.office)
+            }
+
+        },[])
 
 
     return <Flex direction='column' gap='35px' align='center' padding='20px' border='1px solid black' borderRadius='8px'>
