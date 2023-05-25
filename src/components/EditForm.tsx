@@ -64,9 +64,12 @@ export default function EditForm() {
         />
       </Flex>
 
-      <Flex width="100%" justify="space-between">
-        <Button onClick={() => navigate("/")}>Cancel</Button>
+      <Flex textAlign="center" width="100%" justify="space-between">
+        <Button colorScheme="red" px={6} onClick={() => navigate("/")}>
+          Cancel
+        </Button>
         <Button
+          px={6}
           variant="outline"
           onClick={editUserInfo}
           colorScheme="teal"
