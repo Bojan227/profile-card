@@ -43,6 +43,7 @@ export default function EditForm() {
       padding="18px"
       paddingBottom="45px"
       border="2px solid skyblue"
+      w={["90%", "70%", "40%", "30%"]}
     >
       <Avatar size="xl" src="https://bit.ly/broken-link" />
       <Input

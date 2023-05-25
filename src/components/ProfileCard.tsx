@@ -32,7 +32,7 @@ export default function ProfileCard() {
       direction="column"
       gap="25px"
       align="center"
-      width="40%"
+      w={["90%", "70%", "40%", "30%"]}
       borderRadius="8px"
       padding="18px"
       paddingBottom="45px"
